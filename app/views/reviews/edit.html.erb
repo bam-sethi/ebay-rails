@@ -1,0 +1,19 @@
+<h2>Edit Review</h2>
+
+<%= form_for @review do |review| %>
+<div class="field">
+<%= review.label :content %>
+<%= review.text_area :content, size: "50x4" %>
+</div>
+<div class="field">
+<%= review.label :rating %>
+<%= review.text_field :rating %>
+</div>
+<div class="field">
+<%= review.label :recommend %>
+<%= review.text_field :recommend %>
+
+<div class="action">
+<%= review.submit "Update Review" %>
+</div>
+<% end %>

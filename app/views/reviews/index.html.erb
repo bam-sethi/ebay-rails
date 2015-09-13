@@ -1,11 +1,28 @@
-<h1>Reviews</h1>
-<h2><%= link_to 'New Review', new_review_path, class: "new" %></div></h2>
 
 <% @reviews.each do |review| %>
-  <ul>
-    <li><%= link_to review.content, review %></li>
-    <li><%= review.rating %></li>
-    <li>Recommend: <%= review.recommend %></li>
+  <% customer = Customer.find(review.customer_id) %>
+  <% product = Product.find(review.product_id) %>
 
-  </ul>
-<%end%>
+
+      <div class='customer' class='all'>
+      <h4>Customer</h4>
+      <p>Name: <%= link_to customer.name, customer %></p>
+      <p>Age: <%= customer.age %></p>
+      <p>Nationality: <%= customer.nationality %></p>
+      </div>
+
+    <div class='product' class='all'>
+      <h4>Product</h4>
+      <p><%= link_to product.name, product %></p>
+      <p><%= truncate(product.description, length:200){ link_to 'see more', product } %></p>
+      <p><%= number_to_currency(product.price, :unit=>'€') %></p>
+    </div>
+
+    <div class='review' class='all'>
+        <h4>Review</h4>
+        <p><%= link_to truncate(review.content, length:300) { link_to 'see more', review } %></p>
+        <p><%= review.rating %></p>
+      </div>
+    <hr>
+<% end %>
+

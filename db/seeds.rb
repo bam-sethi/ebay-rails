@@ -32,16 +32,16 @@ p9 = Product.create(name: 'Original Hollywood sign', description: 'Im too busy w
 ', price: 300000, quantity: 1)
 p10 = Product.create(name: 'A cornflake shaped like illinois', description: 'Miraculous Corn Flake', price: 2000, quantity: 1)
 
-p1.reviews.create(content: 'Atrocious, didnt work at all', rating: 0, recommend: false, customer: c2)
-p2.reviews.create(content: 'I found this to be very useful', rating: 5, recommend: true, customer: c8)
-p3.reviews.create(content: '“Today is the fourth day of ownership of my pen, and I have to say Im starting to treat it like an old friend. I would happily recommend this pen to anyone who is planning on writing on paper.”', rating: 5, recommend: true, customer: c5)
-p4.reviews.create(content: 'This foil is absolutely ideal for lining the surface of my shuttle for re-entry into Earths atmosphere. Ive used it time and time again and it always stands up to scrutiny. Also, I wrap my sandwiches in it', rating: 4, recommend: true, customer: c10)
-p5.reviews.create(content: 'Ive looked long and hard for an A5 canvas clock of Pam St Clement, with the clock hands strategically placed atop her upper lip, thus acting as a comedy moustache. Imagine my disappointment when I discover the clock hands were positioned awkwardly above her right nostril.', rating: 2, recommend: false, customer: c3)
-p6.reviews.create(content: '“I bought this for my son; he said its rubbish and randomly throws it at my head... I can never see it coming.', rating: 1, recommend: false, customer: c6)
-p7.reviews.create(content: 'Thanks to this revolutionary idea I can now purchase bananas free of fear. I would have given this great product 5 stars if there had been banana peeling instructions included.', rating: 5, recommend: true, customer: c9)
-p8.reviews.create(content: 'does not come with pocket protector, or spare dignity ... If youre a whiny, blond, teenage farmer, this jacket is for you. However youll be forever banished to the friend zone by every girl you see, or worse, the brother zone. But youll always have Yavin!', rating: 3, recommend: false, customer: c7)
-p9.reviews.create(content: 'What better way to teach the next generation how to behave in a police state then with a toy such as this? ... Think of all the fun the little folks can have waterboarding those who "hate our freedom."', rating: 2, recommend: true, customer: c1)
-p10.reviews.create(content: 'shit', rating: 0, recommend: false, customer: c4)
+r1 = p1.reviews.create(content: 'Atrocious, didnt work at all', rating: 0, recommend: false, customer: c2)
+r2 = p2.reviews.create(content: 'I found this to be very useful', rating: 5, recommend: true, customer: c8)
+r3 = p3.reviews.create(content: '“Today is the fourth day of ownership of my pen, and I have to say Im starting to treat it like an old friend. I would happily recommend this pen to anyone who is planning on writing on paper.”', rating: 5, recommend: true, customer: c5)
+r4 = p4.reviews.create(content: 'This foil is absolutely ideal for lining the surface of my shuttle for re-entry into Earths atmosphere. Ive used it time and time again and it always stands up to scrutiny. Also, I wrap my sandwiches in it', rating: 4, recommend: true, customer: c10)
+r5 = p5.reviews.create(content: 'Ive looked long and hard for an A5 canvas clock of Pam St Clement, with the clock hands strategically placed atop her upper lip, thus acting as a comedy moustache. Imagine my disappointment when I discover the clock hands were positioned awkwardly above her right nostril.', rating: 2, recommend: false, customer: c3)
+r6 = p6.reviews.create(content: '“I bought this for my son; he said its rubbish and randomly throws it at my head... I can never see it coming.', rating: 1, recommend: false, customer: c6)
+r7 = p7.reviews.create(content: 'Thanks to this revolutionary idea I can now purchase bananas free of fear. I would have given this great product 5 stars if there had been banana peeling instructions included.', rating: 5, recommend: true, customer: c9)
+r8 = p8.reviews.create(content: 'does not come with pocket protector, or spare dignity ... If youre a whiny, blond, teenage farmer, this jacket is for you. However youll be forever banished to the friend zone by every girl you see, or worse, the brother zone. But youll always have Yavin!', rating: 3, recommend: false, customer: c7)
+r9 = p9.reviews.create(content: 'What better way to teach the next generation how to behave in a police state then with a toy such as this? ... Think of all the fun the little folks can have waterboarding those who "hate our freedom."', rating: 2, recommend: true, customer: c1)
+r10 = p10.reviews.create(content: 'shit', rating: 0, recommend: false, customer: c4)
 
 
 

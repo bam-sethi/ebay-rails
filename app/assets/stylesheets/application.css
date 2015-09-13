@@ -17,7 +17,7 @@
 h1, h2, h3 {
   font-family: 'Rock Salt', cursive;
  }
-.new, .del, .edit {
+.new, .del, .edit, h4 {
   font-family: 'Coming Soon', cursive;
 }
 
@@ -72,4 +72,20 @@ li {
 }
 .edit {
   background-color: deeppink;
+}
+.all {
+  display: inline-block;
+  width: 40px;
+}
+.customer {
+    display: inline-block;
+  width: 30%;
+}
+.product {
+    display: inline-block;
+  width: 30%;
+}
+.review {
+    display: inline-block;
+  width: 30%;
 }
