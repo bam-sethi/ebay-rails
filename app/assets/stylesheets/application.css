@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+h1, h2{
+  font-family: 'Rock Salt', cursive;
+ }
+/*main header*/
+h1{
+  color: darkgrey;
+}
+.e{
+  color: red;
+}
+.bay {
+  color: blue;
+}
+.rails {
+  color: red;
+}
+/*page header*/
+h2 {
+  color: grey;
+}
+/*input button and form*/
+input[type="submit"]{
+  background-color: black;
+  border-style: none;
+  color: white;
+}
+.nifty-form {
+  color: black;
+}

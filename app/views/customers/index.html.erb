@@ -1,11 +1,11 @@
-<h1>customers</h1>
+<h2>customers</h2>
 
 <% @customers.each do |customer| %>
   <ul>
   <li><%= link_to customer.name, customer %></li>
   <li><%= customer.age %></li>      
   <li><%= customer.nationality %></li>      
-
+  
   </ul>
 
  <% end %>
