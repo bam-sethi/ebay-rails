@@ -1,0 +1,19 @@
+<h2>Write a Review</h2>
+
+<%= form_for @review,  url: {action: "create"}, html: {class: "nifty-form"} do |review| %>
+<div class="field">
+<%= review.label :content %>
+<%= review.text_area :content, size: "50x4" %>
+</div>
+<div class="field">
+<%= review.label :rating %>
+<%= review.text_field :rating %>
+</div>
+<div class="field">
+<%= review.label :recommend %>
+<%= review.text_field :recommend %>
+
+<div class="action">
+<%= review.submit "Add New Review" %>
+</div>
+<% end %>

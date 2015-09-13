@@ -1,0 +1,22 @@
+<h2>New Product</h2>
+
+<%= form_for @product,  url: {action: "create"}, html: {class: "nifty-form"} do |productform| %>
+<div class="field">
+<%= productform.label :name %>
+<%= productform.text_field :name %>
+</div>
+<div class="field">
+<%= productform.label :description %>
+<%= productform.text_area :description, size: "50x4" %>
+</div>
+<div class="field">
+<%= productform.label :price %>
+<%= productform.text_field :price %>
+<div class="field">
+<%= productform.label :quantity %>
+<%= productform.text_field :quantity %>
+</div>
+<div class="action">
+<%= productform.submit "Add New Product" %>
+</div>
+<% end %>

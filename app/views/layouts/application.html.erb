@@ -6,15 +6,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1><span class="e">e</span><span class="bay">bay</span>-on-<span class="rails">rails</span></h1>
 
   <nav>
     <ul>
-      <li><%= link_to 'Home', customers_path %></li>
-      <li><%= link_to 'New Customer', new_customer_path %> </li>
-    </ul>
+      <li><%= link_to 'Customers', customers_path %></li>
+      <li><%= link_to 'Products', products_path %></li>
+      <li><%= link_to 'Reviews', reviews_path %></li>
+      </ul>
   </nav>
   
 <%= yield %>

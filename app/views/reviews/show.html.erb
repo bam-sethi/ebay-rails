@@ -1,0 +1,10 @@
+<h2>Review</h2>
+
+<ul>
+<li><%= @review.content %></li>
+<li><%= @review.rating %></li>
+<li><%= @review.recommend %></li>
+</ul>
+
+<div class="edit"><%= link_to 'Edit', edit_review_path(@review), class: "edit" %></div>
+<div class="del"><%= link_to 'Delete', @review, method: :delete, data: {confirm: "Are you sure??"}, class: "delete" %></div>

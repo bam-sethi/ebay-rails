@@ -14,13 +14,28 @@
  *= require_self
  */
 
-h1, h2{
+h1, h2, h3 {
   font-family: 'Rock Salt', cursive;
  }
+.new, .del, .edit {
+  font-family: 'Coming Soon', cursive;
+}
+
 /*main header*/
 h1{
   color: darkgrey;
 }
+.new {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid lightgrey;  
+  background-color: blue;
+  padding: 4px;
+/*  box-shadow: 5px 5px hotpink;*/
+}
+
 .e{
   color: red;
 }
@@ -42,4 +57,19 @@ input[type="submit"]{
 }
 .nifty-form {
   color: black;
+}
+li {
+  color: black;
+}
+
+.del, .edit {
+  padding: 3px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+}
+.edit {
+  background-color: deeppink;
 }

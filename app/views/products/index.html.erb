@@ -1,1 +1,11 @@
-<h1>products</h1>
+<h2>Products</h2>
+<h2><%= link_to 'New Product', new_product_path, class: "new" %></div></h2>
+
+<% @products.each do |product| %>
+  <ul>
+    <li><%= link_to product.name, product %></li>
+    <li><%= product.description %></li>
+    <li><%= number_to_currency(product.price, :unit=>'€') %></li>
+    <li>Quantity: <%= product.quantity %></li>
+  </ul>
+<% end %>
